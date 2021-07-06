@@ -11,6 +11,7 @@
     - LOGIN COM CONTA GOOGLE
     - INTERAÇÃO FIREBASE
     - LEITURA DE CODIGO DE BARRAS
+    - SHARED PREFERENCES SALVANDO DADOS LOCALMENTE
 <!--te-->
 
 >Este conteudo foi produzido durante o intensivo Next Level Week 

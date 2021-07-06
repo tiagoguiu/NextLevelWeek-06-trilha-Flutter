@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:payflow/modules/login/login_controller.dart';
 import 'package:payflow/shared/themes/appColors.dart';
 import 'package:payflow/shared/themes/app_images.dart';
 import 'package:payflow/shared/themes/app_text_styles.dart';
@@ -12,6 +13,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
   @override
   Widget build(BuildContext context) {
     //DEFININDO TAMANHO ATUAL DA TELA
@@ -60,22 +62,22 @@ class _LoginPageState extends State<LoginPage> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                      Padding(
-                      padding: const EdgeInsets.only(
-                        left: 40,
-                        top: 40,
-                        right: 40,
-                      ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 40,
+                      top: 40,
+                      right: 40,
+                    ),
                     child: SocialLoginButton(
                       onTap: () {
-                        print("clicou");
+                        controller.googleSignIn(context);
                       },
+                      //chamando classe para efetuar login google ao pressionar o botao
                     ),
                   ),
                 ],
               ),
             ),
-            
           ],
         ),
       ),
