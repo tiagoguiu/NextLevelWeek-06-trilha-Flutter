@@ -12,6 +12,7 @@
     - INTERAÇÃO FIREBASE
     - LEITURA DE CODIGO DE BARRAS
     - SHARED PREFERENCES SALVANDO DADOS LOCALMENTE
+    - GOOGLE MACHINE LEARNING KIT
 <!--te-->
 
 >Este conteudo foi produzido durante o intensivo Next Level Week 
