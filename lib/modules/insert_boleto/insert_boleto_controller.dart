@@ -39,7 +39,7 @@ class InsertBoletoController {
     final form = formKey.currentState;
     //O FORM COM TEXTFORMFIELD TEM UMA INTERAÇÃO DE IDENTIFICAÇÃO ENTRE ELES
     if (form!.validate()) {
-      return saveBoleto();
+      return await saveBoleto();
     }
   }
 }

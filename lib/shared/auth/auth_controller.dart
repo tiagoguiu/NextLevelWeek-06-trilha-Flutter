@@ -17,7 +17,7 @@ O QUAL É PRIVADO
       saveUser(user);
       _user = user;
 //push replacement faz com que o usuario não tenha opção de volta
-      Navigator.pushReplacementNamed(context, "/home");
+      Navigator.pushReplacementNamed(context, "/home", arguments: user);
     } else {
       Navigator.pushReplacementNamed(context, "/login");
     }
